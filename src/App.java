@@ -5,6 +5,7 @@ public class App {
         try (Scanner scanner = new Scanner(System.in)) {
 
             TarotDeck deck = new TarotDeck();
+            deck.cut();
             deck.shuffle();
 
             while (deck.cardsRemain()) {
